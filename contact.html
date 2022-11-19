@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title>Join Us</title>
+</head>
+
+<body>
+	<a class="skip" href="#main">Skip to Main Content</a>
+	<header>
+		<img src="../images/header.png" alt="Tikkun Olam Makers logo (colored)" id="header_logo">
+		<nav>
+			<ul class="nav_links">
+				<li><a href="about.html">About</a></li>
+				<li><a href="team.html">Team</a></li>
+				<li><a href="impact.html">Our Impact</a></li>
+				<li><a href="globaldatabase.html">Global Database</a></li>
+				<li class="active_page"><a href="contact.html">Join Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="contact" id="main">
+		<h1>Contact Us</h1>
+		<div class="container">
+			<form action="/action_page.php">
+				<div class="row">
+					<div class="col-25">
+						<label for="fname">First Name</label>
+					</div>
+					<div class="col-75">
+						<input type="text" id="fname" name="firstname" placeholder="Your Name..">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="lname">Last Name</label>
+					</div>
+					<div class="col-75">
+						<input type="text" id="lname" name="lastname" placeholder="Your Last Name..">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="email">Email</label>
+					</div>
+					<div class="col-75">
+						<input type="text" id="email" name="email" placeholder="Enter Your Email..">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="role">Role</label>
+					</div>
+					<div class="col-75">
+
+						<select id="role" name="role">
+							<option value="need-knower">Need Knower</option>
+							<option value="maker">Maker</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="subject">Subject</label>
+					</div>
+					<div class="col-75">
+						<textarea id="subject" name="subject" placeholder="Write something.."
+							style="height:200px"></textarea>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<input type="submit" value="Submit">
+				</div>
+			</form>
+		</div>
+
+	</main>
+
+	<footer>
+		<p> TOM: Michigan</br>TOM@University</p>
+
+
+		<a href="https://tomglobal.org/home">
+			<img src="../images/footer.png" height="150" alt="help one, help many, tomglobal.org" id="footer_logo"></a>
+
+
+	</footer>
+</body>
+
+</html>
