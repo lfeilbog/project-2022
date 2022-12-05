@@ -4,6 +4,7 @@ html {
 
 body {
   background-color: white;
+  /* color: #4d4d4d; */
   color: #4d4d4d;
   font-family: sans-serif;
 }
@@ -19,6 +20,10 @@ header {
   width: 100%;
   border-bottom: 3px solid #89C64F;
   margin-bottom: 5px;
+}
+
+div.gallery {
+  padding-bottom: 10px;
 }
 
 .nav_links {
@@ -44,12 +49,13 @@ header {
   height: fit-content;
 }
 
-#footer_logo {
+/* #footer_logo {
   width: 120px;
+  height:120px;
   display: flex;
   justify-content: flex-start;
   height: fit-content;
-}
+} */
 
 #main a:visited {
   color: inherits;
@@ -72,7 +78,8 @@ header {
 .skip a:focus {
   top: 20px;
   background: white;
-  color: black;
+  color: #00274C;
+  ;
 }
 
 :focus {
@@ -114,20 +121,21 @@ nav a {
 }
 
 footer {
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
   color: #00274C;
   background-color: #bbb;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between;
+  align-items: center; */
 
 
 }
 
 footer p {
-  align-items: center;
-  font-size: 16px;
-  padding-left: 15px;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+  font-weight: bold;
 }
 
 
@@ -150,7 +158,8 @@ footer p {
   font-size: 20px;
   font-weight: bold;
   text-align: left;
-  color: #00A3D3;
+  color: #00274C;
+  /* color: #00A3D3; */
 }
 
 
@@ -311,23 +320,27 @@ div.dots {
 }
 
 .name_flex li:first-child {
-  color: white;
-  background-color: #00A3D3;
+  color: #4d4d4d;
+  background-color: white;
   padding: 5px;
   width: 50%;
-  font-size: 13px;
+  font-size: 15px;
+  border: 2px solid #00A3D3;
+  margin: 5px;
 
 }
 
 
 
 .name_flex li:nth-child(2) {
-  color: white;
-  background-color: #F15C31;
+  color: #4d4d4d;
+  background-color: white;
   padding: 5px;
   width: 50%;
   font-size: 13px;
   align-content: center;
+  border: 2px solid #89C64F;
+  margin: 5px;
 }
 
 .name_flex {
@@ -343,9 +356,10 @@ div.dots {
 }
 
 .meaning_of_name h2 {
-  color: black;
+  color: #00274C;
   text-align: center;
-  font-weight: 400;
+  font-weight: 600;
+
 }
 
 .meaning_of_name li {
@@ -437,8 +451,9 @@ div.fact div.blurb {
   padding-top: 15px;
   font-size: 22px;
   /* color: #F15C31; */
-  color: black;
+  /* color: #00274C; */
   font-weight: bold;
+  color: #F15C31;
 }
 
 .gallery h2,
@@ -448,19 +463,29 @@ div.fact div.blurb {
 .solution_database h2,
 .solution_database h3 {
   padding-left: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   font-size: 20px;
   padding-top: 10px;
   font-weight: bolder;
-  color: #00A3D3;
+  color: #00274C;
+}
+
+div.solution_database h3 {
+  padding-top: 10px;
 }
 
 .impact h2 {
   font-size: 20px;
   padding-left: 15px;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
   padding-top: 20px;
+  text-align: center;
+
+
+
+
 }
+
 
 
 
@@ -485,9 +510,9 @@ div.local-team {
 div.global-team img,
 div.local-team img {
   width: 230px;
-  height: 230px; 
- 
-  
+  height: 230px;
+
+
 
   border: 2px solid #89C64F;
 }
@@ -509,17 +534,17 @@ div.global-team img:nth-child(2) {
 
 .gallery div.bio-text,
 .bio {
-  color: black;
+  color: #00274C;
   font-size: 13px;
   padding: 5px;
   position: relative;
   text-align: center;
   font-weight: bold;
-  background-color: #89C64F;
+  /* background-color: #89C64F; */
   width: 230px;
   margin: auto;
   justify-content: center;
-  font-weight: 400;
+
   text-decoration: none;
   /* max-width: 50%;
   height: auto; */
@@ -528,16 +553,19 @@ div.global-team img:nth-child(2) {
 
 
 .bio {
-  color: #F15C31;
+  /* color: #F15C31; */
   background-color: white;
-  font-weight: bold;
+  font-weight: normal;
+
   font-size: 14px;
+  border: 2px solid #00A3D3;
 }
 
 
-div.global, div.local {
-  margin-left:15px;
-  margin-right:15px;
+div.global,
+div.local {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 
@@ -554,7 +582,7 @@ div.local {
   /* z-index: 0; */
 }
 
-div.bio{
+div.bio {
   text-align: center;
 }
 
@@ -584,12 +612,13 @@ h3 .design_challenge {
 }
 
 .design_challenge h3 {
-  color: white;
+  color: #4d4d4d;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 50px;
-  background-color: #89C64F;
+  /* background-color: #89C64F; */
+  /* border: 2px solid #89C64F; */
   padding: 15px;
   text-align: center;
   font-size: 18px;
@@ -644,15 +673,37 @@ div.Hannah ul {
   color: white;
 }
 
+div.about-allie ul,
+div.about-hannah ul {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: stretch;
+  background-color: transparent;
+  padding: 10px;
+  color: #00274C;
+
+}
+
 div.Allie li,
 div.Hannah li {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px;
   font-size: 14px;
   line-height: 1.2;
   list-style-type: none;
+
+
+}
+
+.design_challenge h3 {
+  padding-left: 0px;
+  padding-bottom: 0px;
+  text-align: left;
+  font-size: 20px;
 
 
 }
@@ -668,9 +719,15 @@ div.matthew h3,
 div.rebecca h3 {
   font-weight: bold;
   padding-bottom: 10px;
-  padding-top: 10px;
+
   font-size: 18px;
-  color: #F15C31;
+  color: #00274C;
+  ;
+}
+
+div.Allie h4,
+div.Hannah h4 {
+  color: white;
 }
 
 div.matthew h3,
@@ -683,11 +740,19 @@ div.mask img {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+
+
   padding: 15px;
 
 
 }
 
+/* .mask{
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+
+} */
 div.mask p {
   font-style: italic;
   font-size: 13px;
@@ -726,7 +791,7 @@ div.rebecca p {
   padding: 15px;
   padding-top: 2px;
 
-  color: white;
+  color: #00274C;
   font-size: 14px;
 
 }
@@ -745,34 +810,35 @@ div.makeathon-teams h3 {
   padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: white;
+  color: #00274C;
   font-size: 15px;
 }
 
 div.rebecca,
 div.matthew {
-  background-color: #00274C;
+  border: #FFCB05 2px solid;
+  color: #00274C;
   display: block;
-  padding-bottom: 0;
+  padding: 5px;
   text-align: center;
-  margin: 5px;
+  margin: 10px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
 }
 
-div.rebecca {
+/* div.rebecca {
   background-color: #FFCB05;
 }
 
 div.rebecca p {
   color: #00274C;
-}
+} */
 
-div.rebecca h3 {
+/* div.rebecca h3 {
   color: #00274C;
-}
+} */
 
 div.makeathon-teams {
   display: grid;
@@ -818,11 +884,7 @@ div.learn1 {
 
 }
 
-div.learn1 p {
-  color: white;
-  background-color: #00274C;
 
-}
 
 div.learn2,
 div.learn1 {
@@ -845,16 +907,18 @@ gap: 5px;
 align-items: center;
 width:50%;
 flex-wrap: wrap; */
-  align-content: space-around;
+  /* align-content: space-around; */
   padding-bottom: 5px;
   padding-top: 5px;
 
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
-  justify-content: space-around;
-  
-  align-items: center;
+  /* justify-content: space-around; */
+
+  align-items: normal;
+  justify-content: space-evenly;
+
 }
 
 div.products img {
@@ -868,14 +932,16 @@ div.products img {
 div.details h4 {
   font-weight: bold;
   font-size: 16px;
-  color: #F15C31;
+  color: #00274C;
+  ;
   padding-left: 15px;
 
 
 
 
 }
-.view-bio{
+
+.view-bio {
   display: none;
 }
 
@@ -893,7 +959,7 @@ div.details {
   display: inline;
   /* margin: 2px; */
   width: 200px;
-  height: 150px;
+  height: 180px;
   overflow: scroll;
   text-align: center;
 }
@@ -911,10 +977,52 @@ div.database {
 /* End of Global Database Page*/
 
 @media screen and (min-width: 600px) {
-  div.rebecca, div.matthew{
+
+  nav li {
+
+    padding: 10px;
+
+
+
+  }
+
+  div.products:last-child div.details {
+    height: fit-content;
+  }
+
+  .impact h2 {
+    font-size: 22px;
+
+
+
+  }
+
+  div.rebecca,
+  div.matthew {
+    border: none;
+  }
+
+  div.Allie h4,
+  div.Hannah h4 {
+    color: #00274C;
+  }
+
+  div.Allie ul,
+  div.Hannah ul {
+    border: 5px solid #00A3D3;
+  }
+
+  div.Allie ul:nth-child(2),
+  div.Hannah ul:nth-child(2) {
+    border: none;
+  }
+
+  div.rebecca,
+  div.matthew {
     margin: 0px;
     padding: 0px;
   }
+
   .nav_links {
     display: flex;
     flex-direction: row;
@@ -926,20 +1034,26 @@ div.database {
     width: 100%;
     position: sticky;
     top: 0;
-    z-index:1;
+    z-index: 1;
 
   }
 
-  .impact h1, .overview h1, .team h1, .database h1 {
+  .impact h1,
+  .overview h1,
+  .team h1,
+  .database h1 {
     text-align: left;
     padding-left: 15px;
-    padding-bottom: 5px;
+    padding-bottom: 20px;
     font-size: 22px;
   }
-  h4.comm-info{
+
+  h4.comm-info {
     font-size: 16px;
   }
-  .overview p, .tom_university p {
+
+  .overview p,
+  .tom_university p {
     font-size: 16px;
   }
 
@@ -959,7 +1073,7 @@ div.database {
     height: auto;
   } */
 
-  .gallery div.bio-text{
+  .gallery div.bio-text {
     font-size: 13px;
   }
 
@@ -971,37 +1085,41 @@ div.database {
     grid-template-columns: auto auto auto;
     justify-content: space-around;
   }
-  div.global-team img{
+
+  div.global-team img {
     width: 250px;
-    height: 250px; 
-  }
-  div.global div.bio-text{
-    width:250px;
+    height: 250px;
   }
 
-  div.global{
+  div.global div.bio-text {
+    width: 250px;
+  }
+
+  div.global {
     margin: 0px;
 
   }
-  div.local{
+
+  div.local {
     margin: 0px;
     padding: 0px;
 
   }
 
 
-  div.local img{
-    width:195px;
+  div.local img {
+    width: 195px;
     height: 195px;
   }
+
   div.local-team,
   div.local div.bio-text,
   div.local div.bio {
-    grid-row-gap: 3px;
-    grid-column-gap: 1px;
+    grid-row-gap: 5px;
+    grid-column-gap: 3px;
     margin: auto;
     width: auto;
-   
+
 
   }
 
@@ -1014,45 +1132,51 @@ div.database {
   }
 
 
-   /* justify-items: stretch;
+  /* justify-items: stretch;
     grid-column: 1/1; */
-   
-  
 
-div.local:nth-child(7){
-  grid-row: 3/3;
-   grid-column: 1 / 3;
-  
-}
-div.local:nth-child(8){
- 
-  grid-column: -1 / -3;
-  grid-row: 3/3;
 
-}
+
+  div.local:nth-child(7) {
+    grid-row: 3/3;
+    grid-column: 1 / 3;
+
+  }
+
+  div.local:nth-child(8) {
+
+    grid-column: -1 / -3;
+    grid-row: 3/3;
+
+  }
 
   .slideshow {
     display: contents;
     z-index: 0;
   }
-  .numbertext{
+
+  .numbertext {
     z-index: 0;
   }
 
-  .design_challenge h3{
-    margin:0px;
+  .design_challenge h3 {
+    margin: 0px;
     text-align: left;
     max-width: 0px;
-    
+
 
   }
-  .design_challenge h3 br{
+
+  .design_challenge h3 br {
     display: inline;
   }
-  div.Allie, div.Hannah{
+
+  div.Allie,
+  div.Hannah {
     margin-left: 20px;
     margin-right: 20px;
   }
+
   div.Allie ul,
   div.Hannah ul {
     border-top-right-radius: 0px;
@@ -1068,8 +1192,9 @@ div.local:nth-child(8){
 
   div.Allie li,
   div.Hannah li {
-    font-size: 15px;
-    padding: 0px;
+    font-size: 16px;
+    padding: 5px;
+    font-weight: 400;
   }
 
   div.Allie img,
@@ -1083,8 +1208,8 @@ div.local:nth-child(8){
 
   div.about-allie,
   div.about-hannah {
-    flex-direction: column-reverse;
-    padding-top: 0px;
+    flex-direction: column;
+
   }
 
   div.learn1,
@@ -1101,14 +1226,18 @@ div.local:nth-child(8){
     height: 300px;
     width: 250px;
   }
-  div.Hannah h3, div.Allie h3{
-    color:#00274C;
+
+  div.Hannah h3,
+  div.Allie h3 {
+    color: #00274C;
     background-color: white;
     font-size: 20px;
   }
-  div.about-allie ul li, div.about-hannah ul li{
+
+  div.about-allie ul li,
+  div.about-hannah ul li {
     font-size: 16px;
-    color:  #4d4d4d;
+    color: #00274C;
     font-weight: 500;
   }
 
@@ -1116,12 +1245,16 @@ div.local:nth-child(8){
     margin-left: auto;
     margin-right: auto;
   } */
-  div.design_challenge h3{
-    padding:0px;
+  div.design_challenge h3 {
+    margin-left: auto;
+    margin-right: auto;
+    /* padding:0px; */
   }
-  div.mask p{
+
+  div.mask p {
     display: none;
   }
+
   /* div.makeathon div.matthew{
   color: #00274C;
   background-color: white;
@@ -1134,8 +1267,8 @@ div.local:nth-child(8){
 
   div.rebecca h3,
   div.matthew h3 {
-    
-    
+
+
     color: #00274C;
     font-size: 17px;
     text-align: center;
@@ -1155,7 +1288,7 @@ div.local:nth-child(8){
   div.makeathon-teams {
     /* padding: 15px; */
     padding-top: 0px;
-  
+
   }
 
   div.makeathon-teams div.rebecca,
@@ -1169,10 +1302,22 @@ div.local:nth-child(8){
   div.mask img {
     width: 100%;
   }
-  div.rebecca img, div.matthew img{
+
+  div.rebecca img,
+  div.matthew img {
     width: 290px;
     height: 290px;
-    
+
+  }
+
+  .solution_database h2,
+  div.solution_database p {
+    text-align: center;
+
+  }
+
+  div.solution_database p {
+    font-size: 16px;
   }
 
   div.database {
@@ -1216,27 +1361,27 @@ div.local:nth-child(8){
     align-items: center;
     width: 50%;
     flex-wrap: nowrap;
+
   }
 
   .design_challenge h3 {
-    max-width:fit-content;
- 
+    max-width: fit-content;
+
   }
-  div.makeathon img{
+
+  div.makeathon img {
     padding-bottom: 5px;
   }
-  div.products img{
-    width:290px;
-    height:240px;
+
+  div.products img {
+    width: 290px;
+    height: 240px;
   }
-  div.slideshow-container{
+
+  div.slideshow-container {
     width: 550px;
   }
-  .impact div.makeathon{
-    text-align: center;
-   
-    
-  }
+
 
 }
 
@@ -1252,39 +1397,72 @@ div.local:nth-child(8){
 
 
 @media screen and (min-width: 900px) {
+
+  /* div.details p{
+    font-size: 16px;
+  } */
+  body,
+  div.solution_database p {
+    font-size: 18px;
+  }
+
+  div.learn1a img,
+  div.learn2a img {
+    width: 350px;
+    height: 300px;
+  }
+
+
+  div.Allie ul,
+  div.Hannah ul {
+    border: none;
+  }
+
   header {
     flex-direction: row;
   }
-  div.overview .name_flex{
+
+  div.overview .name_flex {
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
     margin-left: auto;
     margin-right: auto;
   }
-  div.overview .name_flex li:nth-child(2),  div.overview .name_flex li:first-child{
+
+  div.overview .name_flex li:nth-child(2),
+  div.overview .name_flex li:first-child {
     font-size: 17px;
   }
-  div.meaning_of_name h2{
+
+  div.meaning_of_name h2 {
     text-align: left;
+    font-weight: bold;
   }
-  .meaning_of_name li div{
+
+  .meaning_of_name li div {
     font-size: 18px;
   }
-  div.slideshow-container{
+
+  div.slideshow-container {
     width: 700px;
   }
-  div.blurb p,  h4.comm-info{
+
+  div.blurb p,
+  h4.comm-info {
     text-align: center;
     font-size: 18px;
   }
-  div.blurb p{
-    color:#00274C;
+
+  div.blurb p {
+    color: #00274C;
+    font-weight: 600;
   }
-  h4.comm-info{
+
+  h4.comm-info {
     background-color: #00274C;
     padding: 10px;
-  
+
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -1292,187 +1470,236 @@ div.local:nth-child(8){
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
-  
-  
+
+
   }
-  div.fact{
+
+  div.fact {
     background-color: transparent;
-    border-top-right-radius: 50px;
+    /* border-top-right-radius: 50px;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
-    border: 2px solid #00274C;
-    
+    border: 2px solid #00274C; */
+
+
   }
+
   .team div.local-team {
     grid-template-columns: auto auto auto auto;
     justify-content: space-around;
   }
+
   div.local:nth-child(7) {
     grid-row: 2;
     grid-column: 3;
-}
-div.local:nth-child(8) {
-  grid-column:4;
-  grid-row: 2;
-}
-div.global-team{
-  justify-content: flex-start;
-  margin: 15px;
-  grid-template-columns: auto;
-}
-div.global a{
-  display: none;
-}
-div.view-bio{
-  display: contents;
-  padding: 15px;
-  font-size: 16px;
-  color: #F15C31;
-  font-weight: medium;
-  line-height: 1.4;
-  margin: 10px;
-}
-div.global-team{
-  grid-template-columns: auto auto;
-  row-gap: 5px;
-  column-gap: 15px;
+  }
 
-}
-div.about-allie, div.about-hannah{
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 15px;
-  
-}
-div.about-allie ul , div.about-hannah ul {
-  height:100px;
-  text-align: left;
-}
-div.group div.Hannah h3, div.group div.Allie h3{
+  div.local:nth-child(8) {
+    grid-column: 4;
+    grid-row: 2;
+  }
 
-  padding-top: 10px;
-  padding-left: 15px;
-  margin: auto;
-  background-color: transparent;
-}  
-div.Allie img, div.Hannah img{
-  padding: 0px;
-  margin: auto;
-}
-/* div.Allie ul, div.Hannah ul{
+  div.global-team {
+    justify-content: flex-start;
+    margin: 15px;
+    grid-template-columns: auto;
+  }
+
+  div.global a {
+    display: none;
+  }
+
+  div.view-bio {
+    display: contents;
+    padding: 15px;
+    font-size: 16px;
+    color: #00274C;
+    ;
+    font-weight: medium;
+    line-height: 1.4;
+    margin: 10px;
+  }
+
+  div.global-team {
+    grid-template-columns: auto auto;
+    row-gap: 5px;
+    column-gap: 15px;
+
+  }
+
+  div.about-allie,
+  div.about-hannah {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+
+  }
+
+  div.about-allie ul,
+  div.about-hannah ul {
+    height: 100px;
+    text-align: left;
+  }
+
+  div.group div.Hannah h3,
+  div.group div.Allie h3 {
+
+    padding-top: 10px;
+    padding-left: 15px;
+    margin: auto;
+    background-color: transparent;
+  }
+
+  div.Allie img,
+  div.Hannah img {
+    padding: 0px;
+    margin: auto;
+  }
+
+  /* div.Allie ul, div.Hannah ul{
 justify-content: center;
 } */
-div.makeathon img{
-  max-width:700px;
-}
-.overview p,
-.team p,
-.impact p,
-.database p,
-.design_challenge p,div.Allie li, div.Hannah li,
-div.design_challenge p, div.makeathon p{
-  font-size: 16px;
-}
-.impact div.makeathon{
-  margin-right: 10px;
- 
-  
-}
-.impact div.makeathon p{
- margin: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  
-}
-div.group div.Allie, div.group div.Hannah{
-  
-  
-  border: #00274C 2px solid;
+  div.makeathon img {
+    max-width: 700px;
+  }
 
-}
+  .overview p,
+  .team p,
+  .impact p,
+  .database p,
+  .design_challenge p,
+  div.Allie li,
+  div.Hannah li,
+  div.design_challenge p,
+  div.makeathon p {
+    font-size: 16px;
+  }
 
-div.Allie ul, div.Hannah ul{
-  padding: 0px;
-  padding-top: 5px;
-  justify-content: center
+  .impact div.makeathon {
+    margin-right: 10px;
 
 
-}
+  }
 
-.design_challenge h3{
-  text-align: center;
-}
-div.group{
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto;
-  row-gap: 3px;
-  column-gap: 3px;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-div.about-allie, div.about-hannah{
-  padding-bottom: 0px;
-}
-div.Allie div.mask img{
-  width: 90%;
-  height: auto;
-  padding-bottom: 5px;
- 
+  .impact div.makeathon p {
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 
-}
-div.products {
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 2px;
-  align-items: center;
-  width: 33%;
-  flex-wrap: nowrap;
-  padding-top: 2px;
-  padding-bottom: 2px;
-}
-div.details {
-  display: inline;
-  /* margin-left: auto;
+  }
+
+  .impact div.makeathon div.matthew p,
+  .impact div.makeathon div.rebecca p {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+
+  }
+
+  div.group div.Allie,
+  div.group div.Hannah {
+
+
+    border: #00274C 2px solid;
+
+  }
+
+  div.Allie ul,
+  div.Hannah ul {
+    padding: 0px;
+    padding-top: 5px;
+    justify-content: center
+  }
+
+  .design_challenge h3 {
+    text-align: center;
+  }
+
+  div.group {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 3px;
+    column-gap: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  div.about-allie,
+  div.about-hannah {
+    padding-bottom: 0px;
+  }
+
+  div.Allie div.mask img {
+    width: 90%;
+    height: auto;
+    padding-bottom: 5px;
+
+
+  }
+
+  div.products {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2px;
+    align-items: center;
+    width: 33%;
+    flex-wrap: nowrap;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  div.details {
+    display: inline;
+    /* margin-left: auto;
   margin-right: auto; */
-  width: fit-content;
-  margin: 0px;
- 
-  text-align: center;
-}
-div.details p{
-font-size: 14px;
-}
-div.products img{
-  margin: 0px;
-}
+    width: fit-content;
+    margin: 0px;
 
-div.products:last-child{
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 2px;
-  align-items: center;
-  width: 33%;
-  flex-wrap: nowrap;
-  padding-bottom: 0px;
+    text-align: center;
+  }
+
+  div.details p {
+    font-size: 16px;
+  }
+
+  div.products img {
+    margin: 0px;
+  }
+
+  div.products:last-child {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2px;
+    align-items: center;
+    width: 33%;
+    flex-wrap: wrap;
+    padding-bottom: 0px;
+    margin: 0px;
 
 
-}
-div.products:last-child img{
-  width: 290px;
-  height: 240px;
-  padding:0px;
-}
+  }
 
-div.products:last-child div.details {
-  width: fit-content;
+  div.products:last-child img {
+    width: 290px;
+    height: 240px;
+    padding: 0px;
 
-}
-div.details h4{
-  font-size: 18px;
-  padding-top: 2px;
-}
+  }
+
+  div.products:last-child div.details {
+    width: fit-content;
+    height: 180px;
+
+  }
+
+  div.details h4 {
+    font-size: 18px;
+    padding-top: 2px;
+  }
 
 }
 
